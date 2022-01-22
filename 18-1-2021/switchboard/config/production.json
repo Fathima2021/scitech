@@ -1,0 +1,7 @@
+{
+  "port": 8080,
+  "log_level": "info",
+  "mongodb_config": "mongodb://example.com:27017/microdb",
+  "service_base_url": "http://localhost:4001",
+  "seed_database": "false"
+}

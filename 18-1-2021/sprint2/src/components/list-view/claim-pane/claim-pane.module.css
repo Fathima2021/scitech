@@ -1,0 +1,82 @@
+.claim_pane {
+    border-radius: 5px;
+    border: var(--blue-100) 1px solid;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - 200px);
+    background: var(--white-100);
+    height: calc(100vh - 200px);
+}
+
+.claim_list_item {
+    color: var(--blue-100);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.claim_pane>.title_section {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.claim_pane>.title_section>h2 {
+    margin: 0;
+}
+
+.claim_name_section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.claim_select {
+    color: var(--text-color) !important;
+    background-color: unset !important;
+    border: unset !important;
+    outline: none;
+    box-shadow: unset !important;
+    padding: unset !important;
+}
+
+.list_section {
+    flex: 1;
+    overflow-y: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.list_section>ol {
+    margin: 0;
+    padding: 20px;
+    padding-top: 0px;
+    padding-left: 40px;
+}
+
+.list_section>ol>li {
+    padding: 15px 0px;
+}
+
+.claim_pointers {
+    padding: 0;
+    list-style-position: outside;
+}
+
+.claim_pointers>li {
+    padding: 10px;
+    list-style-position: outside;
+    border: 1px solid var(--white-100);
+    margin-top: 5px;
+}
+
+.active_claim, .claim_pointers>li:hover {
+    border: var(--blue-100) 1px solid;
+    background: var(--blue-10);
+    cursor: pointer;
+    border-radius: 5px;
+}
+

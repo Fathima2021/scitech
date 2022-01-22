@@ -1,0 +1,42 @@
+.claim_screen {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    height: 100%;
+    padding: 10px 20px;
+    min-width: 98vw;
+}
+
+
+
+.claim_screen > .claim_pane {
+    flex: 4;
+    min-width: 40%;
+}
+
+.claim_screen > .evidence_pane {
+    flex: 5;
+}
+
+.case_section, .button_group, .case_select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+} 
+
+.case_section {
+    padding: 10px 20px;
+    background-color: var(--blue-10);
+}
+
+.case_select {
+    gap: 10px;
+    color: var(--blue-100) !important;
+    align-items: flex-start;
+    /* background-color: unset !important;
+    border: unset !important;
+    outline: none;
+    box-shadow: unset !important */
+}

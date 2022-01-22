@@ -1,0 +1,42 @@
+.case_section {
+    padding: 10px 20px;
+    background-color: var(--blue-10);
+}
+
+.case_section, .button_group, .case_select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+} 
+.case_select {
+    gap: 10px;
+    color: var(--blue-100) !important;
+    align-items: flex-start;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+}
+.figure_item {
+    display: flex;
+    align-items: center;
+    gap: 50px; 
+    margin: 20px 0;
+}
+
+.data_section {
+    flex: 2;
+}
+
+.image_section {
+    /* width: 100%; */
+    flex: 1;
+}
+
+.figure_list{
+    padding: 0 20px;
+    height: calc(100vh - 120px);
+    overflow: auto;
+}

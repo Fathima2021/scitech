@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - apt-get install gcc make -y
+  build:
+    commands:
+      - npm install -g yarn
+      - yarn install
+      - yarn build
+
+artifacts:
+  files:
+    - '**/*'

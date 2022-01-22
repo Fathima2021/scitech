@@ -1,0 +1,16 @@
+{
+  "port": 3005,
+  "name": "patentart",
+  "username": "sa",
+  "password": "wel@123",
+  "database_name": "litagility_db",
+  "host": "192.168.1.41",
+  "dialect": "mssql",
+  "log_level": "debug",
+  "log_output": "stdout",
+  "service_base_url": "https://doc.patent-art.com:5001",
+  "seed_database": "false",
+  "storage_account":"litdev01stor",
+  "storage_account_key":"aeK38soZmcLSDTZPc3zMD03Dc2jvntWld7hKPFhU+w2SliXwK384/H23mDQpqWwhlsFHOOYxhT1sOf4BIiJ76w==",
+  "container":"hello"
+}

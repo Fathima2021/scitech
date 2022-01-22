@@ -1,0 +1,64 @@
+.entity_select_container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.evidence_pane {
+    justify-items: flex-start;
+}
+
+.evidence_pane>.top_section, .evidence_listing {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.evidence_listing {
+    padding: 10px;
+    height: 100%;
+}
+.evidence_pane .tab_pane {
+    height: calc(100vh - 260px);
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.evidence_btn {
+    height: 25px;
+    font-size: 15px !important;
+    padding: 0px 10px !important;
+}
+.tab_section {
+    position: relative;
+}
+
+.add_section {
+    position: absolute;
+    right: 10px;
+    margin: 0;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+
+.pane_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tab_input {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+ }
+
+ .input_fld {
+     outline: none;
+     height: 25px;
+     background: transparent;
+     border: 1px dashed var(--grey-75);
+     padding: 0 5px;
+     width: 100px;
+ }

@@ -1,0 +1,40 @@
+{
+  "port": 3001,
+  "name": "patentart",
+  "username": "patent",
+  "password": "Patent$123",
+  "database_name": "db_demo",
+  "host": "194.233.82.129",
+  "dialect": "mssql",
+  "log_level": "debug",
+  "log_output": "stdout",
+  "service_base_url": "http://localhost:8000",
+  "seed_database": "false"
+}
+
+{
+    "port": 3001,
+    "name": "patentart",
+    "username": "sa",
+    "password": "wel@123",
+    "database_name": "db_demo",
+    "host": "client.patent-art.com",
+    "dialect": "mssql",
+    "log_level": "debug",
+    "log_output": "stdout",
+    "service_base_url": "http://localhost:8000",
+    "seed_database": "false"
+  }
+  
+PORT = 3005
+NODE_ENV = 'development'
+NAME = 'patentart'
+DB_HOST = '192.168.1.41'
+DB_NAME = 'litagility_db'
+DB_USERNAME = 'sa'
+DB_PASSWORD = 'wel@123'
+DIALECT = 'mssql'
+LOG_LEVEL =  "debug",
+LOG_OUTPUT = "stdout",
+SERVICE_BASE_URL = "https://doc.patent-art.com:5001",
+SEED_DATEBASE = "false"

@@ -1,0 +1,6 @@
+.active_claim {
+    border: var(--blue-100) 1px solid !important;
+    background: var(--blue-10);
+    cursor: pointer;
+    border-radius: 5px;
+}

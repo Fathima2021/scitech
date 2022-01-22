@@ -1,0 +1,20 @@
+.claim_screen {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    /* align-items: center; */
+    height: 100%;
+    padding: 10px 20px;
+    min-width: 98vw;
+}
+
+
+
+.claim_screen > .claim_pane {
+    flex: 4;
+    min-width: 40%;
+}
+
+.claim_screen > .evidence_pane {
+    flex: 5;
+}

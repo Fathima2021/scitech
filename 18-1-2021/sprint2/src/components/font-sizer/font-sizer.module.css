@@ -1,0 +1,15 @@
+
+.font_module {
+    display: flex;
+    font-weight: bold;
+    font-size: 18px;
+    justify-items: center;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.font_module > span {
+    flex: 1;
+    text-align: center;
+    justify-self: center;
+}

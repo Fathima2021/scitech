@@ -1,0 +1,22 @@
+.evidence_pane {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.entity_select_container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.evidence_pane h6 {
+    color: var(--blue-100);
+}
+.evidence_list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    max-height: calc(100vh - 380px);
+    overflow: auto;
+    padding: 10px;
+}

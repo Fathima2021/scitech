@@ -1,0 +1,12 @@
+.App {
+    height: 100vh;
+    background: #f9fcff
+}
+
+.nav-button {
+    width: 100%;
+    outline: unset;
+    border: unset;
+    background-color: var(--white-100);
+    color: var(--blue-100);
+}

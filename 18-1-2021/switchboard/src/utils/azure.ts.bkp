@@ -1,0 +1,36 @@
+import { BearerStrategy, IBearerStrategyOption } from 'passport-azure-ad';
+
+const config = {
+  credentials: {
+    tenantID: '91567928-bfd2-4271-9e33-032e0584956e',
+    clientID: '6f64bb5c-8c72-4843-9ce8-3834f5a4a7a2'
+  },
+  metadata: {
+    authority: 'login.microsoftonline.com',
+    discovery: '.well-known/openid-configuration',
+    version: ''
+  },
+  // https://sts.windows.net/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/
+  settings: {
+    validateIssuer: true,
+    passReqToCallback: false,
+    loggingLevel: 'debug',
+    loggingNoPII: false
+  },
+  scopes: ['user.read']
+};
+
+const options: IBearerStrategyOption = {
+  identityMetadata: `https://${config.metadata.authority}/${config.credentials.tenantID}/${config.metadata.version}/${config.metadata.discovery}`,
+  issuer: `https://login.microsoftonline.com/${config.credentials.tenantID}/discovery/keys`,
+  clientID: '6f64bb5c-8c72-4843-9ce8-3834f5a4a7a2',
+  audience: '6f64bb5c-8c72-4843-9ce8-3834f5a4a7a2',
+  validateIssuer: false,
+  loggingNoPII: true,
+  loggingLevel: 'info',
+  scope: ['user.read']
+};
+
+const bearerStrategy = new BearerStrategy(options, (token, done) => done(null, {}, token));
+
+export { bearerStrategy };
